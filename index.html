@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Alert</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header>
+        <img src="https://i.postimg.cc/jjTkp2j2/83e1f058-a9e4-48a9-96cf-cfee85242293.jpg" alt="Logo" class="logo">
+        <span class="logo-text">STORCH</span>
+    </header>
+    <div class="container">
+        <h1>SOS</h1>
+        <div id="ledStatus" class="status">Loading...</div>
+        <div id="alertMessage" class="alert"></div>
+        <div id="coordinates" class="coordinates"></div>
+    </div>
+    
+    <!-- Side Box -->
+    <div class="side-box">
+        <button id="userDetailsButton" class="user-details-button">User Details</button> <!-- Button to open new page -->
+        <div class="vertical-text">S<br>A<br>V<br>E<br><br>Y<br>O<br>U<br>R<br><br>S<br>O<br>U<br>L</div>
+    </div>
+
+    <script>
+        // Function to update the LED status
+        function updateStatus() {
+            fetch('/ledStatus')
+                .then(response => response.json())
+                .then(data => {
+                    const ledStatus = document.getElementById("ledStatus");
+                    const alertMessage = document.getElementById("alertMessage");
+                    const coordinates = document.getElementById("coordinates");
+
+                    ledStatus.innerText = data.status;
+                    
+                    if (data.status === "LED is ON") {
+                        alertMessage.innerText = "Alert: LED is ON";
+                        coordinates.innerHTML = `<a href="https://maps.google.com/?q=9.064557,76.556981" target="_blank">Location: 9.064557, 76.556981</a>`;
+                    } else {
+                        alertMessage.innerText = "";
+                        coordinates.innerHTML = "";
+                    }
+                })
+                .catch(error => {
+                    console.error("Error fetching LED status:", error);
+                    ledStatus.innerText = "Error fetching status";
+                });
+        }
+
+        // Open user details page when the button is clicked
+        document.getElementById("userDetailsButton").addEventListener("click", function() {
+            window.open('user-details.html', '_blank'); // Adjust the file name as needed
+        });
+
+        setInterval(updateStatus, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* Add background image to the body */
+body { 
+    font-family: Arial, sans-serif;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+    background-image: url('https://i.postimg.cc/bJL55xby/image-2024-10-25-23-28-51.png'); /* Replace with your background image path if needed */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* Header for logo and title */
+header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1; /* Ensures the logo stays above other elements */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+}
+
+/* Style for logo image */
+.logo {
+    height: 50px; /* Adjust height to control the size of the logo */
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+/* Style for the logo text */
+.logo-text {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #fff; /* Change text color */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Side Box Styling */
+.side-box {
+    position: absolute;
+    top: 0; /* Start at the top */
+    right: -40px; /* Distance from the right edge */
+    background: linear-gradient(to right, rgba(189, 45, 45, 0) 0%, rgba(104, 103, 103, 0.7) 100%); /* Gradient for fade effect */
+    padding: 10px; /* Space inside the box */
+    border-radius: 10px; /* Rounding corners */
+    box-shadow: 0 4px 8px rgba(76, 29, 29, 0.3);
+    width: 80px; /* Adjust this value to change the width */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Use flexbox for vertical alignment */
+    justify-content: flex-start; /* Align items at the start */
+    align-items: flex-start; /* Align items at the start */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.user-details-button {
+    position: absolute; /* Change to absolute positioning */
+    bottom: 50px; /* Distance from the bottom */
+    left: -1450px; /* Adjusted distance from the left to position it in the bottom left corner */
+    padding: 5px;
+    background-color: #e31999; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70%; /* Full width of the button */
+}
+
+.user-details-button:hover {
+    background-color: #aeed2f; /* Darker shade on hover */
+}
+
+.vertical-text {
+    font-size: 2rem; /* Change this value to adjust the text size */
+    color: #ffffff; /* Text color */
+    line-height: 1.5; /* Space between lines */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align text in a column */
+    align-items: center; /* Center text horizontally */
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 400px;
+    animation: fadeIn 2s ease, scaleIn 1.5s ease;
+    opacity: 0; /* Start hidden, then fade in */
+    transform: scale(0.9); /* Start scaled down, then expand */
+    animation-fill-mode: forwards;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #18e444;
+}
+
+/* Fade-in and scale-up animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes scaleIn {
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Text styling */
+h1 { 
+    font-size: 2rem; 
+    color: #333; 
+    margin-bottom: 20px; 
+}
+.status { 
+    font-size: 1.5rem; 
+    color: #444; 
+    padding: 15px; 
+    background-color: rgba(224, 224, 224, 0.8); /* Semi-transparent grey */
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+}
+
+.alert { 
+    color: red; 
+    font-weight: bold; 
+    font-size: 1.2rem;
+}
+
+.coordinates a { 
+    color: blue; 
+    text-decoration: none; 
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+.coordinates a:hover { 
+    color: darkblue; 
+}
