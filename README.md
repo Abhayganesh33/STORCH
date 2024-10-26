@@ -1,5 +1,7 @@
 # ESP32 Safety Torch Project
 
+![1](https://github.com/user-attachments/assets/5f5e02cd-fcf5-459e-8bda-27a88694f911)
+
 ## Overview
 
 This project demonstrates a simple web interface for controlling a safety torch device using an ESP32. The provided code serves as a frontend prototype to illustrate the planned functionality.
@@ -24,5 +26,5 @@ This prototype is designed to be simple and can be modified to fit additional fe
 ## License
 
 This project is open-source and available for public use and modification. Please refer to the license file for more details.
-![1](https://github.com/user-attachments/assets/5f5e02cd-fcf5-459e-8bda-27a88694f911)
+
 ![image_2024-10-26_07-15-20](https://github.com/user-attachments/assets/342723a1-2b73-4bb3-8512-81e9ecdde660)
