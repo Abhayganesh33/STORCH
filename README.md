@@ -24,3 +24,4 @@ This prototype is designed to be simple and can be modified to fit additional fe
 ## License
 
 This project is open-source and available for public use and modification. Please refer to the license file for more details.
+![image_2024-10-26_07-15-20](https://github.com/user-attachments/assets/b282acef-0ac5-4cfe-984e-8da32643e399)
