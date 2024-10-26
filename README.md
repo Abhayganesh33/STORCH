@@ -11,12 +11,12 @@ STORCH is a women's safety device primarily focused on solo traveling women. Whe
 - **Wi-Fi Connectivity**: Due to time constraints, I switched from Bluetooth connectivity to Wi-Fi. The ESP32 generates an IP address once powered on and connected to the network.
 
 ## Media
+![1](https://github.com/user-attachments/assets/5031fd69-a353-4252-9cec-e1df89a186eb)
 
-https://github.com/user-attachments/assets/5f5e02cd-fcf5-459e-8bda-27a88694f911
+![image_2024-10-26_07-15-20](https://github.com/user-attachments/assets/63bd070f-1631-4996-b3d4-d7560e8d994e)
 
-https://github.com/user-attachments/assets/342723a1-2b73-4bb3-8512-81e9ecdde660
+![image_2024-10-26_07-16-59](https://github.com/user-attachments/assets/081d5632-2400-436d-8c12-fd3823239036)
 
-https://github.com/user-attachments/assets/5713e1df-95f8-4c07-acf7-cf6be9425f4a
 
 ![4](https://github.com/user-attachments/assets/4ad00250-888e-49a8-a2d1-a677feab46bd)
 
